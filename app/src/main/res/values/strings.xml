@@ -2,6 +2,11 @@
     <string name="app_name">Meu Pet</string>
     <string name="insira_o_usuario">Insira o usuário</string>
     <string name="insira_a_senha">Insira a senha</string>
-    <string name="entrar">Entrar</string>
+    <string name="entrar">Sing Up</string>
     <string name="sair">Sair</string>
+    <string name="company_name">COMPANY NAME</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper leo eget libero commodo, ac vulputate quam semper. Nam arcu lacus, fringilla sed sapien id, congue semper felis.</string>
+    <string name="SingInSocial">Sing In with Social Media</string>
+
 </resources>
