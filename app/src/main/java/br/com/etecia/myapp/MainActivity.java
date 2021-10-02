@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     //Variaveis globais que representam os objetos no xml
     EditText edtUsuario, edtSenha;
     Button btnEntrar;
+    Button btnLogin;
+    Button btnCads;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,49 +25,23 @@ public class MainActivity extends AppCompatActivity {
         //declarei as variáveis do java para apresentar para as variáveis xml
         edtUsuario = findViewById(R.id.edtUsuario);
         edtSenha = findViewById(R.id.edtSenha);
-
         btnEntrar = findViewById(R.id.btnEntrar);
+        btnLogin = findViewById(R.id.btnLogin);
+        btnCads = findViewById(R.id.btnCads);
+
 
         //ação do botão entrar
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String usuario, senha;
-
-                usuario = edtUsuario.getText().toString();
-                senha = edtSenha.getText().toString();
-
-                if (usuario.equals("etecia") && senha.equals("etecia")) {
-
-                    //Toast.makeText(getApplicationContext(), "Bem vindo ao sistema!!!", Toast.LENGTH_SHORT).show();
-
-                    //Abrir janela
-
-                    startActivity(new Intent(getApplicationContext(),Menu_Activity.class));
-                    finish();
-
-                    Intent intent = new Intent(getApplicationContext(),Menu_Activity.class);
-                    
-                    startActivity(intent);
-
-
-                } else {
-                    Toast.makeText(getApplicationContext(), "Usuário ou senha inválidos!!!", Toast.LENGTH_SHORT).show();
-                    edtUsuario.setText("");
-                    edtSenha.setText("");
-                    edtUsuario.requestFocus();
-                }
+                String usuario,senha;
+                edtUsuario.getText();
 
 
             }
         });
 
-
     }
 
-
-    public void sairSistema(View view) {
-        finish(); //finalizando a activity
-    }
 }

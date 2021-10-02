@@ -18,15 +18,13 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="64dp"
             android:src="@drawable/icon" />
 
         <EditText
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/textedit"
             android:drawableRight="@drawable/ic_baseline_person"
             android:inputType="text"
@@ -39,12 +37,35 @@
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/textedit"
             android:inputType="textPassword"
             android:padding="8dp"
             android:hint="Password"
+            />
+
+        <EditText
+            android:drawableRight="@drawable/ic_baseline_email"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textedit"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:hint="E-mail"
+            />
+        <EditText
+            android:drawableRight="@drawable/ic_baseline_phone_iphone"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/textedit"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:hint="Phone Number"
             />
 
         <TextView
@@ -52,53 +73,29 @@
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_baseline_check_box_outline_blank_24"
             android:layout_gravity="center"
-            android:text="Remember password"
+            android:text="@string/terms"
             android:layout_marginBottom="15dp"
             android:textColor="@color/white"
             />
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_width="120dp"
-                android:layout_height="40dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/botao_redondo"
-                android:text="@string/sig_in"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:layout_marginRight="2dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="10dp"
-                />
-            <Button
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginBottom="20dp"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:text="Forget Password?"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:layout_marginRight="28dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="10dp"
-                />
-
-        </LinearLayout>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botao_redondo"
+            android:gravity="center"
+            android:text="@string/entrar"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="Don´t have account?"
+            android:text="Already have an Account?"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="1dp"
             android:textColor="@color/white"
             />
@@ -111,13 +108,12 @@
             android:layout_height="wrap_content"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:textAllCaps="false"
-            android:text="@string/entrar"
+            android:text="Sing Up"
             android:textColor="@color/white"
             android:drawableRight="@drawable/ic_baseline_arrow_forward_ios"
             android:textSize="18dp"
             android:layout_marginBottom="14dp"
             />
-
 
     </LinearLayout>
 </LinearLayout>

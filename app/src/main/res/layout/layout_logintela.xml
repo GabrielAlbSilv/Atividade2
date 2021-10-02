@@ -22,6 +22,7 @@
             android:src="@drawable/icon" />
 
         <EditText
+            android:id="@+id/edtUsuario"
             android:layout_width="240dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -35,6 +36,7 @@
             />
 
         <EditText
+            android:id="@+id/edtSenha"
             android:drawableRight="@drawable/ic_baseline_lock_24"
             android:layout_width="240dp"
             android:layout_height="40dp"
