@@ -13,5 +13,9 @@
     <string name="user_name">User name</string>
     <string name="sig_in">Sig In</string>
     <string name="forget_password">Forget Password?</string>
+    <string name="terms">Allow Terms and Conditions</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone number</string>
 
 </resources>
