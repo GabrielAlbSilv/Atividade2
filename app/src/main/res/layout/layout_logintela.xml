@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackgroun"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/icon" />
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textedit"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:inputType="text"
+            android:padding="8dp"
+            android:hint="@string/user_name"
+            />
+
+        <EditText
+            android:drawableRight="@drawable/ic_baseline_lock_24"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/textedit"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:hint="Password"
+        />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:drawableLeft="@drawable/ic_baseline_check_box_outline_blank_24"
+         android:layout_gravity="center"
+         android:text="Remember password"
+         android:layout_marginBottom="15dp"
+         android:textColor="@color/white"
+         />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/botao_redondo"
+                android:text="@string/sig_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Forget Password?"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginRight="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Don´t have account?"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_gravity="right"
+            android:onClick="sairSistema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textAllCaps="false"
+            android:text="@string/entrar"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios"
+            android:textSize="18dp"
+            android:layout_marginBottom="14dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

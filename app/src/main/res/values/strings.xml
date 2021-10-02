@@ -8,5 +8,10 @@
     <string name="welcome_back">Welcome Back</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper leo eget libero commodo, ac vulputate quam semper. Nam arcu lacus, fringilla sed sapien id, congue semper felis.</string>
     <string name="SingInSocial">Sing In with Social Media</string>
+    <string name="sig_in">Sig In</string>
+    <string name="user_name">User name</string>
+    <string name="user_name">User name</string>
+    <string name="sig_in">Sig In</string>
+    <string name="forget_password">Forget Password?</string>
 
 </resources>

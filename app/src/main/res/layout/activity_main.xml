@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#6E6BC8"
+    android:background="@drawable/mainbackgroun"
     >
 
 
@@ -66,7 +66,7 @@
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/botao_redondo"
-            android:text="Sig In"
+            android:text="@string/sig_in"
             android:textAllCaps="false"
             android:textColor="@color/white"
             />

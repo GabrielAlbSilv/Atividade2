@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu_Activity"></activity>
+        <activity
+            android:name=".cadastro"
+            android:exported="true" />
+        <activity
+            android:name=".logintela"
+            android:exported="true" />
+        <activity android:name=".Menu_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
