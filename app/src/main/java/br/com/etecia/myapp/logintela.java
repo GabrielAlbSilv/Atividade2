@@ -34,7 +34,9 @@ public class logintela extends AppCompatActivity {
 
                 }else{
                     Toast.makeText(getApplicationContext(),"Usuário ou senha errado",Toast.LENGTH_SHORT).show();
-
+                    edtUsuario.setText(" ");
+                    edtSenha.setText(" ");
+                    edtUsuario.requestFocus(); //volta para a janela de Insira o usuário
                 }
 
             }

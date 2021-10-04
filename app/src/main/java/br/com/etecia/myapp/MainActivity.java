@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     //Variaveis globais que representam os objetos no xml
     EditText edtUsuario, edtSenha;
-    Button btnEntrar;
     Button btnLogin;
     Button btnCads;
 
@@ -25,23 +24,22 @@ public class MainActivity extends AppCompatActivity {
         //declarei as variáveis do java para apresentar para as variáveis xml
         edtUsuario = findViewById(R.id.edtUsuario);
         edtSenha = findViewById(R.id.edtSenha);
-        btnEntrar = findViewById(R.id.btnEntrar);
         btnLogin = findViewById(R.id.btnLogin);
         btnCads = findViewById(R.id.btnCads);
 
-
-        //ação do botão entrar
-        btnEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
+        btnLogin.setOnClickListener(new View.OnClickListener() { //ação do botão Sig in ir para tela login
             public void onClick(View v) {
-
-                String usuario,senha;
-                edtUsuario.getText();
-
-
+                Intent intent = new Intent(MainActivity.this, logintela.class);
+                startActivity(intent);
             }
         });
 
-    }
+        btnCads.setOnClickListener(new View.OnClickListener() { //ação do botão Sing Up ir para tela cadastro
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, cadastro.class);
+                startActivity(intent);
+            }
+        });
 
-}
+        }
+    }

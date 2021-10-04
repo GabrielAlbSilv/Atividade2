@@ -8,6 +8,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Aplicativos/Atividade2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android/Aplicativos/Atividade2/app/src/main/res/layout/layout_cadastro.xml" value="0.25" />
+        <entry key="..\:/Android/Aplicativos/Atividade2/app/src/main/res/layout/layout_logintela.xml" value="0.25" />
         <entry key="..\:/Android/Aplicativos/MyApp_Botoes_2H/app/src/main/res/drawable/botao_edit.xml" value="0.2203125" />
         <entry key="..\:/Android/Aplicativos/MyApp_Botoes_2H/app/src/main/res/drawable/botao_redondo.xml" value="0.2203125" />
         <entry key="..\:/Android/Aplicativos/MyApp_Botoes_2H/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2203125" />
