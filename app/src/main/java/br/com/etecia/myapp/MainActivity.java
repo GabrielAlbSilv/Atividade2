@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         btnCads = findViewById(R.id.btnCads);
 
+
         btnLogin.setOnClickListener(new View.OnClickListener() { //ação do botão Sig in ir para tela login
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, logintela.class);
@@ -41,5 +42,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        }
+
+    }
     }

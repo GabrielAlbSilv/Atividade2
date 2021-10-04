@@ -16,5 +16,7 @@
     <string name="password">Password</string>
     <string name="phone_number">Phone number</string>
     <string name="dont_account">Don´t have account?</string>
+    <string name="logado">Login efetuado</string>
+    <string name="cadastrado_efetudado">Cadastrado efetudado</string>
 
 </resources>

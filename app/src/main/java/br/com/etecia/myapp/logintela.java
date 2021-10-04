@@ -2,6 +2,7 @@ package br.com.etecia.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 
 public class logintela extends AppCompatActivity {
     EditText edtUsuario, edtSenha;
-    Button btnLogin;
+    Button btnLogar, btnCadar;
 
 
     @Override
@@ -20,9 +21,10 @@ public class logintela extends AppCompatActivity {
 
         edtUsuario = findViewById(R.id.edtUsuario);
         edtSenha = findViewById(R.id.edtSenha);
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogar = findViewById(R.id.btnLogar);
+        btnCadar = findViewById(R.id.btnCadar);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -31,14 +33,25 @@ public class logintela extends AppCompatActivity {
                 //senha = edtSenha.getText().toString();
 
                 if (edtUsuario.getText().equals("etecia") && edtSenha.getText().equals("etecia")){
-
+                    Toast.makeText(getApplicationContext(),"Logando",Toast.LENGTH_SHORT).show();
+                    btnLogar.setOnClickListener(new View.OnClickListener() { //ação do botão Sing Up ir para tela cadastro
+                        public void onClick(View v) {
+                            Intent intent = new Intent(logintela.this, logado.class);
+                            startActivity(intent);
+                        }
+                    });
                 }else{
                     Toast.makeText(getApplicationContext(),"Usuário ou senha errado",Toast.LENGTH_SHORT).show();
                     edtUsuario.setText(" ");
                     edtSenha.setText(" ");
                     edtUsuario.requestFocus(); //volta para a janela de Insira o usuário
                 }
-
+                btnCadar.setOnClickListener(new View.OnClickListener() { //ação do botão Sing Up ir para tela cadastro
+                    public void onClick(View v) {
+                        Intent intent = new Intent(logintela.this, cadastro.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
     }
